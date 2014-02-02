@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PayNow Clickable Demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+        <style>
+            .phone {
+                width: 282px;
+                height: 482px;
+                margin: 1em auto;
+                background: url(device-small.png) no-repeat;
+                position: relative;
+            }
+            
+            .screen {
+                background: black;
+                position: absolute;
+                top: 39px;
+                left: 33px;
+                height: 384px;
+                width: 216px;
+            }
+        </style>
+        <script src="paynow.angular.js"></script>
+    </head>
+    <body ng-app="paynow">
+        <div class="phone" ng-controller="PayNowDemoCtrl">
+            <div ng-show="ui.app" class="screen">
+                
+            </div>
+        </div>
+    </body>
+</html>
